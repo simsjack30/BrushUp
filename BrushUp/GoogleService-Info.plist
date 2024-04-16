@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAyZ8bRsZT8tI8Zz-dOl8okA8bwm-wzFE4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>463550666994</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>dev.johnsims.BrushUp</string>
+	<key>PROJECT_ID</key>
+	<string>brush-up-ea390</string>
+	<key>STORAGE_BUCKET</key>
+	<string>brush-up-ea390.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:463550666994:ios:8ebfb30115f269477f186b</string>
+</dict>
+</plist>
