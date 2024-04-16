@@ -14,7 +14,7 @@ struct ContentView: View {
         VStack {
             Text("You are signed in!")
                 .font(.title)
-            Text("This is a demonstration of the Firebase Auth integration for CPSC-5340 Assignment 4. The remainder of this app will be implemented in the final project.")
+            Text("This is a demonstration of the Firebase Auth integration for CPSC-5340 Assignment 4. The remainder of this app will be implemented in the final project!")
                 .font(.body)
                 .multilineTextAlignment(.center)
                 .padding(.top)
