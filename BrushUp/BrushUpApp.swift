@@ -30,6 +30,7 @@ struct MyApp: App {
         WindowGroup {
             if viewModel.isAuthenticated {
                 ContentView()
+                    .environmentObject(viewModel)
             } else {
                 AuthView()
                     .environmentObject(viewModel)
@@ -37,3 +38,5 @@ struct MyApp: App {
         }
     }
 }
+
+

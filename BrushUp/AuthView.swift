@@ -18,6 +18,12 @@ struct AuthView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
 
+                if let errorMessage = viewModel.errorMessage {
+                    Text(errorMessage)
+                        .foregroundColor(.red)
+                        .padding()
+                }
+
                 if isCreatingNewAccount {
                     Button("Sign Up") {
                         viewModel.signUp(email: email, password: password)
@@ -38,6 +44,7 @@ struct AuthView: View {
 
                 Button(isCreatingNewAccount ? "Already have an account? Sign In" : "Need an account? Sign Up") {
                     isCreatingNewAccount.toggle()
+                    viewModel.clearErrorMessage()
                 }
                 .padding()
 
@@ -45,5 +52,9 @@ struct AuthView: View {
             }
             .navigationTitle(isCreatingNewAccount ? "Sign Up" : "Sign In")
         }
+            .onAppear {
+                viewModel.clearErrorMessage()
+        }
     }
 }
+

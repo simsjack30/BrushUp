@@ -3,25 +3,28 @@ import FirebaseAuth
 
 class AuthViewModel: ObservableObject {
     @Published var isAuthenticated = false
+    @Published var errorMessage: String? = nil
+
     
     func signIn(email: String, password: String) {
-        Auth.auth().signIn(withEmail: email, password: password) { result, error in
-            if let error = error {
-                print("Error signing in: \(error.localizedDescription)")
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
+            if error != nil {
+                self?.errorMessage = "Failed to sign in. Please check your credentials."
             } else {
-                print("User signed in successfully")
-                self.isAuthenticated = true
+                self?.isAuthenticated = true
+                self?.errorMessage = nil
             }
         }
     }
     
     func signUp(email: String, password: String) {
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
             if let error = error {
-                print("Error creating user: \(error.localizedDescription)")
+                self?.errorMessage = "Failed to create account. \(error.localizedDescription)"
             } else {
                 print("User created successfully")
-                self.isAuthenticated = true
+                self?.isAuthenticated = true
+                self?.errorMessage = nil
             }
         }
     }
@@ -34,5 +37,9 @@ class AuthViewModel: ObservableObject {
         } catch let signOutError as NSError {
             print("Error signing out: \(signOutError.localizedDescription)")
         }
+    }
+    
+    func clearErrorMessage() {
+        errorMessage = nil
     }
 }
