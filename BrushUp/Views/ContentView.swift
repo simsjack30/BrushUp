@@ -7,14 +7,14 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView {
-                StudyView()
-                    .tabItem {
-                        Label("Study", systemImage: "book")
-                    }
-                    .environmentObject(artistViewModel)
                 QuizView()
                     .tabItem {
                         Label("Quiz", systemImage: "questionmark")
+                    }
+                    .environmentObject(artistViewModel)
+                StudyView()
+                    .tabItem {
+                        Label("Study", systemImage: "book")
                     }
                     .environmentObject(artistViewModel)
                 LinksView()
@@ -29,12 +29,12 @@ struct ContentView: View {
                 .foregroundColor(.white)
                 .background(Color.red)
                 .clipShape(Capsule())
-
                 .tabItem {
                     Label("Sign Out", systemImage: "arrow.right.square")
                 }
             }
             .navigationTitle("Brush Up")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }

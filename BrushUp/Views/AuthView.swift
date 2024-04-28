@@ -52,9 +52,9 @@ struct AuthView: View {
             }
             .navigationTitle(isCreatingNewAccount ? "Sign Up" : "Sign In")
         }
-            .onAppear {
-                viewModel.clearErrorMessage()
+        .navigationViewStyle(StackNavigationViewStyle())
+        .onAppear {
+            viewModel.clearErrorMessage()
         }
     }
 }
-

@@ -12,6 +12,7 @@ struct StudyView: View {
             }
             .navigationBarTitle("Select an Artist", displayMode: .inline)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

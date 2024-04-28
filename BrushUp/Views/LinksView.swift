@@ -30,6 +30,7 @@ struct LinksView: View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     func openLink(urlString: String) {
