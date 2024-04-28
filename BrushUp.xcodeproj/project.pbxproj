@@ -17,6 +17,12 @@
 		F05BA2112BCF30BB0091D946 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F05BA2102BCF30BB0091D946 /* FirebaseAuth */; };
 		F05BA2132BCF33E90091D946 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05BA2122BCF33E90091D946 /* AuthViewModel.swift */; };
 		F05BA2152BCF340A0091D946 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05BA2142BCF340A0091D946 /* AuthView.swift */; };
+		F05BA21A2BDDC7AB0091D946 /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05BA2192BDDC7AB0091D946 /* ArtistModel.swift */; };
+		F05BA21C2BDDC85C0091D946 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05BA21B2BDDC85C0091D946 /* QuizView.swift */; };
+		F05BA21E2BDDC88C0091D946 /* StudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05BA21D2BDDC88C0091D946 /* StudyView.swift */; };
+		F05BA2202BDDC8970091D946 /* LinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05BA21F2BDDC8970091D946 /* LinksView.swift */; };
+		F05BA2222BDDD3000091D946 /* ArtistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05BA2212BDDD3000091D946 /* ArtistsViewModel.swift */; };
+		F05BA2282BDDFA300091D946 /* ArtistDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05BA2272BDDFA300091D946 /* ArtistDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		F05BA2082BCF2AA60091D946 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F05BA2122BCF33E90091D946 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		F05BA2142BCF340A0091D946 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		F05BA2192BDDC7AB0091D946 /* ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
+		F05BA21B2BDDC85C0091D946 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		F05BA21D2BDDC88C0091D946 /* StudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyView.swift; sourceTree = "<group>"; };
+		F05BA21F2BDDC8970091D946 /* LinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksView.swift; sourceTree = "<group>"; };
+		F05BA2212BDDD3000091D946 /* ArtistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewModel.swift; sourceTree = "<group>"; };
+		F05BA2272BDDFA300091D946 /* ArtistDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +77,12 @@
 			isa = PBXGroup;
 			children = (
 				F05BA1FA2BCF2A200091D946 /* BrushUpApp.swift */,
-				F05BA1FC2BCF2A200091D946 /* ContentView.swift */,
+				F05BA2182BDDC6AA0091D946 /* ViewModel */,
+				F05BA2172BDDC69C0091D946 /* Models */,
+				F05BA2162BDDC67C0091D946 /* Views */,
 				F05BA1FE2BCF2A200091D946 /* Assets.xcassets */,
 				F05BA2082BCF2AA60091D946 /* GoogleService-Info.plist */,
 				F05BA2002BCF2A200091D946 /* Preview Content */,
-				F05BA2122BCF33E90091D946 /* AuthViewModel.swift */,
-				F05BA2142BCF340A0091D946 /* AuthView.swift */,
 			);
 			path = BrushUp;
 			sourceTree = "<group>";
@@ -88,6 +100,36 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F05BA2162BDDC67C0091D946 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F05BA1FC2BCF2A200091D946 /* ContentView.swift */,
+				F05BA21D2BDDC88C0091D946 /* StudyView.swift */,
+				F05BA21B2BDDC85C0091D946 /* QuizView.swift */,
+				F05BA2142BCF340A0091D946 /* AuthView.swift */,
+				F05BA21F2BDDC8970091D946 /* LinksView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F05BA2172BDDC69C0091D946 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F05BA2192BDDC7AB0091D946 /* ArtistModel.swift */,
+				F05BA2272BDDFA300091D946 /* ArtistDetailsView.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F05BA2182BDDC6AA0091D946 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F05BA2122BCF33E90091D946 /* AuthViewModel.swift */,
+				F05BA2212BDDD3000091D946 /* ArtistsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,10 +211,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05BA21E2BDDC88C0091D946 /* StudyView.swift in Sources */,
 				F05BA1FD2BCF2A200091D946 /* ContentView.swift in Sources */,
 				F05BA1FB2BCF2A200091D946 /* BrushUpApp.swift in Sources */,
+				F05BA21A2BDDC7AB0091D946 /* ArtistModel.swift in Sources */,
 				F05BA2152BCF340A0091D946 /* AuthView.swift in Sources */,
 				F05BA2132BCF33E90091D946 /* AuthViewModel.swift in Sources */,
+				F05BA2202BDDC8970091D946 /* LinksView.swift in Sources */,
+				F05BA21C2BDDC85C0091D946 /* QuizView.swift in Sources */,
+				F05BA2282BDDFA300091D946 /* ArtistDetailsView.swift in Sources */,
+				F05BA2222BDDD3000091D946 /* ArtistsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,8 +360,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,8 +388,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

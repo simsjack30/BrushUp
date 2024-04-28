@@ -40,3 +40,6 @@ struct MyApp: App {
 }
 
 
+#Preview {
+    ContentView()
+}
